@@ -7,6 +7,7 @@ function displaySelectedPlayer(players) {
     for (let i = 0; i < players.length; i++) {
         if (count === 5) {
             alert('you cant add more than 5 players');
+            this.disabled = false;
             return;
         }
         else {
@@ -31,7 +32,7 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerCost = getInputFieldValueById('per-player-cost');
     // const playerList = document.getElementById('player-list');
 
-    const playerNumber = playerArray.length;
+    const playerNumber = playerArray.length - 1;
     const totalCost = perPlayerCost * playerNumber;
 
 
