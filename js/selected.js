@@ -57,7 +57,6 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
 function addToSelect(element) {
 
     const selectedPlayer = element.parentNode.parentNode.children[0].innerText;
-
     playerArray.push(selectedPlayer);
 
     displaySelectedPlayer(playerArray);
