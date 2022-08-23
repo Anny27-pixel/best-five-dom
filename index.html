@@ -190,9 +190,9 @@
                     </div>
                     <div>
                         <h2 class="font-bold text-6xl mt-8">Budget</h2>
-                        <p class="mt-8 text-3xl">Per Player <input type="text" name="" id=""
+                        <p class="mt-8 text-3xl">Per Player <input type="text" name="" id="per-player-cost"
                                 class="bg-cyan-600 px-3 py-2 "></p>
-                        <button
+                        <button id="btn-calculate"
                             class="mt-8 px-6 py-4 text-3xl text-white font-medium hover:bg-violet-800 rounded-lg bg-violet-700">Calculate</button>
                         <div class="grid grid-cols-2 mx-auto mt-8">
                             <div>
@@ -204,12 +204,12 @@
                                 </p>
                             </div>
                         </div>
-                        <p class="mt-8 text-3xl mr-10">Manager <input type="text" name="" id=""
+                        <p class="mt-8 text-3xl mr-10">Manager <input type="text" name="" id="manager-field"
                                 class="bg-cyan-600 px-3 py-2 mx-2"></p>
-                        <p class="mt-8 text-3xl ">Coach <input type="text" name="" id=""
+                        <p class="mt-8 text-3xl ">Coach <input type="text" name="" id="coach-field"
                                 class="bg-cyan-600 px-3 py-2 mx-10">
                         </p>
-                        <button id="btn-calculate"
+                        <button id="btn-total-calculate"
                             class="mt-8 px-6 py-4 text-3xl text-white font-medium hover:bg-violet-800 rounded-lg bg-violet-700">Calculate
                             Total</button>
                         <div class="grid grid-cols-2 mx-auto mt-8">
@@ -218,7 +218,7 @@
                                 </p>
                             </div>
                             <div>
-                                <p class="text-3xl font-medium ml-0 mt-6">$<span id="total-expense-field">11000</span>
+                                <p class="text-3xl font-medium ml-0 mt-6">$<span id="total-calculate-field">11000</span>
                                 </p>
                             </div>
                         </div>
@@ -241,6 +241,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="js/selected.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 
 </html>
