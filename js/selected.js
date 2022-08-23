@@ -1,10 +1,18 @@
 const playerArray = [];
 
 function displaySelectedPlayer(players) {
-
+    let count = 0;
     const playerList = document.getElementById('player-list');
     playerList.innerHTML = '';
     for (let i = 0; i < players.length; i++) {
+        if (count === 5) {
+            alert('you cant add more than 5 players');
+            return;
+        }
+        else {
+            count++;
+
+        }
         const playerName = playerArray[i];
         // console.log(typeof player);
         const li = document.createElement('li');
@@ -13,6 +21,7 @@ function displaySelectedPlayer(players) {
         
         `;
         playerList.appendChild(li);
+
 
     }
 
